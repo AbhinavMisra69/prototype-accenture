@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #363030ad;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #151515;
+    color: white;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #2a2525;
+}
+
+.sidebar iframe {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 100px;
+    border: 1px solid #851010;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    border-radius: 15px ;
+}
+
+.button {
+    display: block;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: border-color 0.3s;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.button:hover {
+    border-color: #aaa; /* Change border color on hover */
+}
+
+.active {
+    border-color: #00ff00; /* Green border for active button */
+}
+.active-iframe {
+    border-color: #00ff00; /* Green border for active iframe */
+    box-shadow: 0 0 15px #00ff00; /* Glowing effect for active iframe */
+}
+.main-area {
+    flex-grow: 1;
+    background-color: #494444;
+    width: 55%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.iframe-container {
+    display: flex;
+    flex-direction: column;
+    height: 85%; /* Height for both iframes */
+    margin-top: 20px;
+    
+}
+
+#iframe-container iframe {
+    width: 100%;
+    flex-grow: 1; /* Each iframe takes equal height */
+    border: 1px solid #ddd;
+    margin-bottom: 10px; /* Space between iframes */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transition for glow */
+   
+}
+.main-area h2 {
+    text-align: center;
+    color: azure;
+}
+
+.main-area iframe {
+    width: 100%;
+    height: 75%;
+    border: 1px solid #ddd;
+    border-radius: 15px ;
+    margin-top: 10px;
+}
+
+.tools-sidebar {
+    width: 22%; /* Tools sidebar occupies 25% */
+    background-color: #151515;
+    color: white;
+    padding: 20px;
+}
+
+.tools-sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tool-button {
+    display: block;
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transition for hover effect */
+}
+
+.tool-button:hover {
+    border-color: #aaa; /* Change border color on hover */
+}
+
+.tool-button:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #00ff00; /* Green border for focused button */
+    box-shadow: 0 0 15px #00ff00; /* Glowing effect for focused button */
+}
+
+header img {
+    height: 80px;
+    margin-left: 40px;
+}
+
+
+main {
+    color: white;
+}
+
+header {
+    background-image: linear-gradient(rgb(183, 0, 255), rgb(77, 30, 130));
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 black;
+}
+
+header * {
+    display: inline;
+}
+
+header li {
+    margin: 20px;
+    padding-left: 40px;
+}
+
+header li a {
+    color: white;
+    text-decoration: none;
+}
